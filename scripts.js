@@ -18,6 +18,27 @@ document.getElementById('crypto-type').addEventListener('change',()=>{
     }
 });
 
+/*
+
+document.getElementsByName('radio').addEventListener('click',(event)=>{
+    
+ 
+
+
+});
+
+*/
+
+
+
+
+
+function readRadio(){
+
+    document.getElementsByName('radio')
+
+};
+
 
 
 
@@ -25,11 +46,18 @@ document.getElementById('crypto-type').addEventListener('change',()=>{
 
 function criptoCesar(){
     let alfabeto=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+    let texto=document.getElementById('campo-input');
+    let inc=document.querySelector('.incremento[input]')
+    console.log(texto.value);
+
+
+
+
 
 }
 
 function decriptoCesar(){
-    let alfabeto=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v',,'w','x','y','z'];
+    let alfabeto=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
 
 }
@@ -40,5 +68,11 @@ function cripto64(){
 }
 
 function decripto64(){
+
+}
+
+function validaCampo(){
+
+
 
 }
