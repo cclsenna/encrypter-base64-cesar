@@ -37,11 +37,13 @@ form{
 
 
 
+
+
 .container{
     border: 2px solid black;
     width: 60vw;
-    height:60vh;
-    padding: 25px;
+    height:70vh;
+    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;

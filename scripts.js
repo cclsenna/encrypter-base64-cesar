@@ -21,12 +21,12 @@ document.getElementById('crypto-type').addEventListener('change',()=>{
 
 
 document.getElementById('radio1').addEventListener('click',()=>{
-    document.getElementById('botao').innerText='Criptografar!'
+    document.getElementById('botao').innerText='Codificar!'
 });
 
 
 document.getElementById('radio2').addEventListener('click',()=>{
-    document.getElementById('botao').innerText='Descriptografar!'
+    document.getElementById('botao').innerText='Decodificar a mensagem!'
 });
 
 
