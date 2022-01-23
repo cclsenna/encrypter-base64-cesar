@@ -20,26 +20,24 @@
           <option value="">Escolha sua opção</option>
           <option value="cesar">Cifra de César</option>
           <option value="base64">Base 64</option>
-      </select>
-      <br>
-      
+      </select>      
       <div class="container__radios">
         <label for="radio1">Criptografar</label>
         <input type="radio" name='radio' id="radio1" checked>
         <label for="radio2">Descriptografar</label>
-        <input type="radio" name="radio" id="radio2">
+        <input type="radio" name="radio" id="radio2" >
       </div>
       
 
       <br>
       <label for="inc" style="display:none;" class="incremento">Incremento:</label>
-      <input type="number" name="inc" max="25" min="0" class="incremento" style="display:none;">
+      <input type="number" id="inc" max="25" min="0" class="incremento" style="display:none;">
       <br>
       <textarea class="campo-texto"name="" id="campo-input" cols="20" rows="10" placeholder='Insira o valor aqui'></textarea>
       <br>
-      <textarea class="campo-texto" name="" id="" cols="20  " rows="10" placeholder="Resultado"></textarea>
+      <textarea class="campo-texto" name="" id="campo-output" cols="20  " rows="10" placeholder="Resultado"></textarea>
       <br>
-      <button id="botao" onclick="criptoCesar()">Teste</button>
+      <button id="botao" onclick="criptoCesar()">Criptografar</button>
 
 
     </main>
