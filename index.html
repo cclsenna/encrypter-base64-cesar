@@ -11,33 +11,35 @@
 <body>
 
     <header class="cabeca">
-        <p>Criptografador</p>
+        <p>CRIPTOGRAFADOR</p>
     </header>
     
     <main class="container">
 
-      <select name="crypto-type" id="crypto-type">
-          <option value="">Escolha sua opção</option>
-          <option value="cesar">Cifra de César</option>
-          <option value="base64">Base 64</option>
-      </select>      
-      <div class="container__radios">
-        <label for="radio1">Criptografar</label>
-        <input type="radio" name='radio' id="radio1" checked>
-        <label for="radio2">Descriptografar</label>
-        <input type="radio" name="radio" id="radio2" >
-      </div>
+        <form action="javascript:controller();">
+            <select name="crypto-type" id="crypto-type">
+                <option value="">Escolha sua opção</option>
+                <option value="cesar">Cifra de César</option>
+                <option value="base64">Base 64</option>
+            </select>      
+            <div class="container__radios">
+              <label for="radio1">Codificar</label>
+              <input type="radio" name='radio' id="radio1" checked>
+              <label for="radio2">Decodificar</label>
+              <input type="radio" name="radio" id="radio2" >
+            </div>
+            
       
+            <label for="inc" style="display:none;" class="incremento">Incremento:</label>
+            <input type="number" id="inc" max="25" min="0" class="incremento" style="display:none;">
+            <textarea class="campo-texto"name="" id="campo-input" cols="20" rows="6" placeholder='INSIRA O SEU TEXTO AQUI'></textarea>
+            <textarea class="campo-texto" name="" id="campo-output" cols="20  " rows="6" placeholder="RESULTADO" readonly></textarea>
+            <br>
+            <button id="botao" type="submit">Decodificar</button>
 
-      <br>
-      <label for="inc" style="display:none;" class="incremento">Incremento:</label>
-      <input type="number" id="inc" max="25" min="0" class="incremento" style="display:none;">
-      <br>
-      <textarea class="campo-texto"name="" id="campo-input" cols="20" rows="10" placeholder='Insira o valor aqui'></textarea>
-      <br>
-      <textarea class="campo-texto" name="" id="campo-output" cols="20  " rows="10" placeholder="Resultado"></textarea>
-      <br>
-      <button id="botao" onclick="criptoCesar()">Criptografar</button>
+        </form>
+
+      
 
 
     </main>
