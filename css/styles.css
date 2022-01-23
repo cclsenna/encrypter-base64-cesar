@@ -1,0 +1,50 @@
+
+
+.cabeca{
+    font-size: 2.75em;
+}
+
+
+
+body{
+    display: flex;
+    height:100vh;
+    justify-content:space-between;
+    flex-direction:column;
+    align-items: center;
+    background-color: lightblue;
+
+}
+
+
+
+.container{
+    border: 1px solid black;
+    width: 60vw;
+    height:50vh;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.campo-texto{
+    width: 40%;
+}
+
+.rodape{
+    background-color:slategray;
+    width: 100%;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+}
+
+.rodape p{
+    margin: 0;
+}
+
+
+

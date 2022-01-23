@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Quem tem Boca vai a roma</title>
 </head>
 <body>
+
+    <header class="cabeca">
+        <p>Criptografador</p>
+    </header>
+    
+    <main class="container">
+
+      <select name="crypto-type" id="crypto-type">
+          <option value="">Escolha sua opção</option>
+          <option value="cesar">Cifra de César</option>
+          <option value="base64">Base 64</option>
+      </select>
+      <br>
+      
+      <div class="container__radios">
+        <label for="radio1">Criptografar</label>
+        <input type="radio" name='radio' id="radio1" checked>
+        <label for="radio2">Descriptografar</label>
+        <input type="radio" name="radio" id="radio2">
+      </div>
+      
+
+      <br>
+      <label for="inc" style="display:none;" class="incremento">Incremento:</label>
+      <input type="number" name="inc" max="25" min="0" class="incremento"      style="display:none;">
+      <br>
+      <textarea class="campo-texto"name="" id="" cols="20" rows="10" placeholder></textarea>
+      <br>
+      <textarea class="campo-texto" name="" id="" cols="20  " rows="10"></textarea>
+      <button id="botao">Teste</button>
+
+
+    </main>
+
+    <footer class="rodape">
+        <p>Criado por Caio Senna</p>
+    </footer>
  
     
 <script src="./scripts.js"></script>    

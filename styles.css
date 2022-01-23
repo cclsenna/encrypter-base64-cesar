@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+
+}
+
+.container{
+    border: 1px solid black;
+    width: 100% ;
+    height:400px;
+    
+}
+
+.rodape{
+    background-color: green;
+    width: 100%;
+    height:40px;
+}
+
+
+
