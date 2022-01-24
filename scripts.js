@@ -54,8 +54,6 @@ function controller(){
     
         }
     
-
-
     }
     else{
         alert('Parametro inserido de forma incorreta.Repita novamente a operação.');
