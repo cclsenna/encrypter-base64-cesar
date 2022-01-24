@@ -163,12 +163,14 @@ function decripto64(){
 function validaCampo(){
 
     let inc=document.querySelector('#inc').value;
+    let selection=document.getElementById('crypto-type').value;
 
-    if(parseInt(inc)>25||parseInt(inc)<0){
+
+    if(parseInt(inc)>25||parseInt(inc)<0&&selection.value=='cesar'){
         alert('O valor do incremento deve ser de 0 a 25!')
         return false;
     }
-    else if(inc==''){
+    else if(inc==''&&selection.value=='cesar'){
         alert('Preencha o valor do incremento.');
         return false;
 
