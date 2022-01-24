@@ -164,11 +164,16 @@ function decripto64(){
 
 function validaCampo(){
 
-    let inc=parseInt(document.querySelector('#inc').value);
+    let inc=document.querySelector('#inc').value;
 
-    if(inc>25||inc<0){
+    if(parseInt(inc)>25||parseInt(inc)<0){
         alert('O valor do incremento deve ser de 0 a 25!')
         return false;
+    }
+    else if(inc==''){
+        alert('Preencha o valor do incremento.');
+        return false;
+
     }
 
 
